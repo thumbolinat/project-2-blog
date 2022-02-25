@@ -1,0 +1,33 @@
+{{!-- {{> post-data post }} --}}
+<div class="team-area col-9 justify-content-center">
+<article class="post">
+  <div class="title">
+    <h3>{{post.title}}</h3>
+  </div>
+  <div class="muted-text">
+    <em>Posted by {{post.user.username}} on {{format_date post.created_at}}</em>
+  </div>
+  <div class="body">
+    {{post.post_text}}
+  </div>
+</article>
+
+{{!-- add comment --}}
+{{#if loggedIn}}
+<form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit" class="btn btn-warning">add comment</button>
+  </div>
+</form>
+{{/if}}
+
+{{> comments post.comments}}
+
+</div>
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}

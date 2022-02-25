@@ -1,0 +1,32 @@
+<button type="submit" class="btn btn-light" id="create" onclick="addClass()">Create a New Blog Post</button>
+
+<section id="create-blog" class="hide pt-3">
+  <h2>Create New Blog Post</h2>
+  <form class="submit-post-form">
+    <div>
+      <label for="post-title">Title</label>
+      <input type="text" id="post-title" name="post-title" />
+    </div>
+    <div>
+      <label for="post-body">Body</label>
+      <textarea type="text" id="post-body" name="post-body"></textarea>
+    </div>
+    <button type="submit" class="btn btn-warning" >Submit My Post</button>
+  </form>
+</section>
+
+{{#if posts.length}}
+<h2 class="m-3">My Posts</h2>
+{{#each posts as |post|}}
+<div class="card p-2 m-2 rounded" >
+    
+  <div class="card-body">
+    {{> post-data post }}
+    <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+  </div>
+  
+</div>
+{{/each}}
+{{/if}}
+
+ <script src="/javascript/submit-post.js"></script>
