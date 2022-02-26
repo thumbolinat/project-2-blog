@@ -14,13 +14,7 @@ Post.init(
       },
       title: {
         type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-          // notEmpty: true, // i think this would also have worked
-          len: [1]
-  }
-
-        //validation 
+        allowNull: false
       },
       post_text: {
         type: DataTypes.STRING(1999),
