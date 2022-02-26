@@ -30,8 +30,7 @@ const sess = {
   expiration: 1 * 5 * 60 * 1000  // The maximum age (in milliseconds) of a valid session.
   })
  };
-
-// app.use(session(sess));
+ app.use(session(sess));
 
 app.use(express.static(path.join(__dirname, 'public'))); // link static files
 app.engine('handlebars', hbs.engine);
@@ -44,6 +43,6 @@ app.use(routes);
 
 // turn on connection to db and server
 sequelize.sync({ force: false }).then(() => {
-    app.listen(PORT, () => console.log('Now listening'));
+    app.listen(PORT, () => console.log(`Server is listening on ${PORT}`));
   });
 
