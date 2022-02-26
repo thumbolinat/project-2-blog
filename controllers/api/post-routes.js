@@ -1,5 +1,7 @@
 const router = require('express').Router();
+
 const { Post, User, Comment } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 // get all posts
 router.get('/', (req, res) => {
@@ -72,7 +74,7 @@ router.get('/:id', (req, res) => {
 });
 
 // create a post
-router.post('/', (req, res) => {
+router.post('/', withAuth, (req, res) => {
     // expects {title: 'Taskmaster goes public!', post_text: 'Lorem sispsum and some more', user_id: 1}
     // these can all be found in the Post Model file
     Post.create({
