@@ -60,6 +60,7 @@ router.post('/', (req, res) => {
     // expects {username: 'Lernantino', password: 'password1234'}
   User.create({
     username: req.body.username,
+    email: req.body.email,
     password: req.body.password
   })
   .then(dbUserData => {
@@ -71,6 +72,11 @@ router.post('/', (req, res) => {
       res.json(dbUserData);
     });
   })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  });
+
 });
 
 // verify user during login
@@ -79,12 +85,12 @@ router.post('/login', (req, res) => {
 
     User.findOne({
         where: {
-          username: req.body.username
+          username: req.body.email
         }
       })
       .then(dbUserData => {
         if (!dbUserData) {
-          res.status(400).json({ message: 'No user with that username exists!' });
+          res.status(400).json({ message: 'No user with that email exists!' });
           return;
         }
         // Verify user

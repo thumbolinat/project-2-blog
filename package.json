@@ -1,36 +1,30 @@
 {
-  "name": "blog",
+  "name": "project-2-blog",
   "version": "1.0.0",
-  "description": "",
+  "description": "Blog application",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/seeds.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "2": "^3.0.0",
-    "bad-words": "^3.0.4",
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.2",
+    "deprecated": "^0.0.2",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "express-handlebars": "^6.0.2",
     "express-session": "^1.17.2",
-    "handlebars": "^4.7.7",
-    "heroku": "^7.33.3",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.16.2"
+    "path": "^0.12.7",
+    "sequelize": "^6.17.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thumbolinat/blog.git"
-  },
-  "keywords": [],
-  "bugs": {
-    "url": "https://github.com/thumbolinat/blog/issues"
-  },
-  "homepage": "https://github.com/thumbolinat/blog#readme"
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
