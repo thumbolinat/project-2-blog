@@ -1,6 +1,6 @@
 const router = require('express').Router();
 /* included User bc In a query to the post table, we would like to retrieve not only information about each post, but also the user that posted it. With the foreign key, user_id, we can form a JOIN, an essential characteristic of the relational data model*/
-const { Comment } = require('../../models');
+const { Comment, Post } = require('../../models');
 
 // checks if user logged in; have session; authorized
 // const withAuth = require('../../utils/auth');
@@ -30,6 +30,48 @@ router.post('/', (req, res) => {
         });
     }
   });
+
+router.get('/:id', (req, res) => {
+  Comment.findOne({
+    where: {
+      id:req.params.id
+    },
+    attributes: ['id', 'comment_text', 'user_id', 'post_id', 'created_at', 'updated_at' ]
+  })
+  .then(dbPostData => {
+    if (!dbPostData) {
+      res.status(404).json({ message: 'No comment found with this id' });
+      return;
+    }
+    res.json(dbPostData);
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  });
+})
+
+router.put('/:id', (req,res) => {
+  Comment.update({
+    comment_text: req.body.comment_text,
+    comment_id: req.body.comment_id
+  },
+  { where: {
+    id:req.params.id
+  }})
+  .then(dbPostData => {
+    if(!dbPostData) {
+        res.status(404).json({ message: 'No comment with this id was found'});
+        return;
+}
+res.json(dbPostData);
+})  
+.catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+});
+
+})
 
 router.delete('/:id', (req, res) => {
     Comment.destroy({
