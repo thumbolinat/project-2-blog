@@ -1,4 +1,4 @@
-// import the db connection and the model you're seeding up here
+
 const sequelize = require('../config/connection');
 const { Post } = require('../models');
 const { User } = require('../models');
