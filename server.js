@@ -42,11 +42,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(routes);
 
 // turn on connection to db and server
-// sequelize.sync({ force: false }).then(() => {
-//     app.listen(PORT, () => console.log(`Server is listening on ${PORT}`));
-//   });
-
-  app.listen(process.env.PORT || 3000, function(){
-    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+sequelize.sync({ force: false }).then(() => {
+    app.listen(PORT, () => console.log(`Server is listening on ${PORT}`));
   });
 
