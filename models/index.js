@@ -1,5 +1,6 @@
 const User = require('./User');
 const Post = require('./Post');
+const Vote = require('./Vote');
 const Comment = require('./Comment');
 
 /* A user can make many posts. But a post only belongs to a single user, and never many users. By this relationship definition, we know we have a one-to-many relationship.*/
@@ -11,7 +12,8 @@ User.hasMany(Post, {
 
 /* defining the relationship of the Post model to the User. The constraint we impose here is that a post can belong to one user, but not many users. Again, we declare the link to the foreign key, designated at user_id in the Post model */
 Post.belongsTo(User, {
-    foreignKey: 'user_id'
+    foreignKey: 'user_id',
+    
 });
 
 User.hasMany(Comment, {
@@ -20,6 +22,7 @@ User.hasMany(Comment, {
 
 Comment.belongsTo(User, {
     foreignKey: 'user_id'
+ 
 });
 
 Post.hasMany(Comment, {
@@ -28,7 +31,8 @@ Post.hasMany(Comment, {
 });
 
 Comment.belongsTo(Post, {
-    foreignKey: 'post_id'
+    foreignKey: 'post_id',
+    onDelete: 'SET NULL'
 });
 
 
