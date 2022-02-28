@@ -1,10 +1,6 @@
 const router = require('express').Router();
-<<<<<<< HEAD
+
 const { Post, User, Comment } = require('../../models');
-=======
-const { Post, User, Comment, Vote } = require('../../models');
-const sequelize = require('../../config/connection');
->>>>>>> 5eaa381e9684207ea37c58f6dac203d3f5346b23
 const withAuth = require('../../utils/auth');
 
 // get all posts
@@ -16,9 +12,7 @@ router.get('/', (req, res) => {
             'id', 
             'title', 
             'post_text',
-            'created_at',
-            [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
-        ],
+            'created_at'],
         order: [['created_at', 'DESC']], // sort by most recent
         include: [ // Instead of using complex JOIN statements with SQL, we can call on Sequelize's include option to perform the join for us.
             {
@@ -49,12 +43,7 @@ router.get('/:id', (req, res) => {
         where: {
           id: req.params.id
         },
-        attributes: ['id', 
-        'post_text', 
-        'title',
-        'created_at',
-        // [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
-        ],
+        attributes: ['id', 'post_text', 'title', 'created_at'],
         include: [
             {
                 model: Comment,
@@ -99,18 +88,6 @@ router.post('/', withAuth, (req, res) => {
         res.status(500).json(err);
     });
 });
-
-
-router.put('/upvote', withAuth, (req, res) => {
-    // custom static method created in models/Post.js
-    Post.upvote({ ...req.body, user_id: req.session.user_id }, { Vote, Comment, User })
-      .then(updatedVoteData => res.json(updatedVoteData))
-      .catch(err => {
-        console.log(err);
-        res.status(500).json(err);
-      });
-  });
-  
 
 // update a post
 router.put('/:id', (req, res) => {
@@ -161,5 +138,13 @@ router.delete('/:id', (req, res) => {
     });
 });
 
-
 module.exports = router;
+
+
+
+
+
+
+
+
+

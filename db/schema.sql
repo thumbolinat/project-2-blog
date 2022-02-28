@@ -1,5 +1,5 @@
-DROP DATABASE IF EXISTS project_2_blog;
+DROP DATABASE IF EXISTS blog_db;
 
-CREATE DATABASE project_2_blog;
 
+=======
 

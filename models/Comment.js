@@ -38,7 +38,8 @@ Comment.init(
             }
           }
     },
-    { // configure the metadata
+    {
+        // configure the metadata
         sequelize,
         freezeTableName: true,
         underscored: true, // In Sequelize, columns are camelcase by default.
