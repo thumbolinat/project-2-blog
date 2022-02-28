@@ -7,18 +7,18 @@ const { User } = require('../models');
 // create an array of rows that you want to seed the model with
 const postData = [
   {
-    title: 'Sting',
-    post_text: 'Sting was original lead singer of band Police.',
+    title: 'Gandalf',
+    post_text: 'Gandalf is a protagonist in J. R. R. Tolkiens novels The Hobbit and The Lord of the Rings. He is a wizard, one of the Istari order, and the leader and mentor of the Fellowship of the Ring. Tolkien took the name "Gandalf" from the Old Norse "Catalogue of Dwarves" in the Völuspá.',
     user_id: 1
   },
   {
-    title: 'Paul Simon',
-    post_text: 'Originally one of the 2 memers of music group called Simon and Garfankel.',
+    title: 'Gollum',
+    post_text: 'Gollum is a fictional monstrous character from J. R. R. Tolkiens Middle-earth legendarium. He was introduced in the 1937 fantasy novel The Hobbit, and became important in its sequel, The Lord of the Rings. Gollum was a Stoor Hobbit of the River-folk who lived near the Gladden Fields.',
     user_id: 1
   },
   {
-    title: 'Belinda Carlile',
-    post_text: 'One of the original members of 80s all girl band called Go-Gos',
+    title: 'Aragorn',
+    post_text: 'Aragorn is a fictional character and a main protagonist in J. R. R. Tolkiens The Lord of the Rings. Aragorn was a Ranger of the North, first introduced with the name Strider and later revealed to be the heir of Isildur, King of Gondor.',
     user_id: 2
   }
 ];
@@ -26,15 +26,15 @@ const postData = [
 // create an array of rows that you want to seed the model with
 const users = [
   {
-    username: 'Mark',
+    username: 'frodo',
     password: '123456'
   },
   {
-    username: 'Nancy',
+    username: 'aragon',
     password: '1234567'
   },
   {
-    username: 'Richard',
+    username: 'gollum',
     password: '1234568'
   }
 ];
