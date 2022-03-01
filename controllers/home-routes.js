@@ -10,15 +10,23 @@ router.get('/', (req, res) => {
           'id',
           'title',
           'post_text',
-          'created_at'
+          'created_at',
+          [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
         ],
         order: [['created_at', 'DESC']],
         include: [
           {
+            model: Comment,
+            attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+            include: {
+              model: User,
+              attributes: ['username']
+            }
+          },
+          {
             model: User,
             attributes: ['username']
-          },
-          { model: Comment }
+          }
         ]
       })
         .then(dbPostData => {
@@ -41,10 +49,19 @@ router.get('/', (req, res) => {
             'title',
             'post_text',
             'created_at',
-            'user_id'
+            'user_id',
+            [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
           ],
           order: [['user_id']],
           include: [
+            {
+              model: Comment,
+              attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+              include: {
+                model: User,
+                attributes: ['username']
+              }
+            },
             {
               model: User,
               attributes: ['username']
@@ -115,10 +132,3 @@ router.get('/', (req, res) => {
   });
 
 module.exports = router;
-
-
-
-
-
-
-
