@@ -28,7 +28,6 @@ User.init(
       username: {
         type: DataTypes.STRING,
         allowNull: false
-        /// verify unique user name
       },
       // define a password column
       password: {
@@ -70,13 +69,7 @@ User.init(
 
 );
 
-
-
 module.exports = User;
-
-
-
-
 
 
 

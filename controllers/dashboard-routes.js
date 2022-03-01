@@ -92,6 +92,3 @@ router.get('/edit/:id', withAuth, (req, res) => { // add withAuth here as our ow
 
 });
 module.exports = router;
-
-
-
