@@ -1,6 +1,6 @@
 async function editFormHandler(event) {
     event.preventDefault();
-    
+
     // When the button is clicked, capture the id of the post
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
@@ -18,7 +18,7 @@ async function editFormHandler(event) {
           }
       });
       // check the response status
-      
+
     if (response.ok) {
         document.location.replace('/dashboard');
         //console.log(title, post_text); // these values are both showing up correctly in console!
@@ -26,5 +26,5 @@ async function editFormHandler(event) {
         alert(response.statusText);
     }
   }
-  
+
   document.querySelector('.edit-post-form').addEventListener('submit', editFormHandler);
