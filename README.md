@@ -12,11 +12,11 @@ The User may view posts without an login credentials, but to create, delete, edi
 
 A deployed version of the application can be found here:
 
- - https://<app-name-goes-here>.herokuapp.com/
+ - https://portside.herokuapp.com/
 
 For local testing, download repo and please add .env file to root of app directory and in it place login credentials for the following parameters:
 
- - DB_NAME='tech_blog_db'
+ - DB_NAME='blog_db'
  - DB_USER='root'
  - DB_PW='XXX'
 
@@ -41,21 +41,32 @@ Save changes to .env file and deploy.
 
 ## Demonstration
 
+-[Presention Slides](https://docs.google.com/presentation/d/1LeYb_d5uvq3wRo3i1XdawShc71srlnlQwMdo5jXy7f0/edit#slide=id.p)
+
 ## Collaborators
 
  - Tamara
+ -- Project Lead
+ -- Starter Code
+ -- Javascript
 
  - Jaimit
+ -- API
+ -- Routes
 
- - Abigail
+ - Abirami
+ --Handlebars
+ --CSS
 
  - Vithursan
+ --Database
+ --Models
 
 ## Links
 
 Deployed Application:
 
- - https://<app-name-goes-here>.herokuapp.com/
+ - https://portside.herokuapp.com/
 
 Github Repository:
 
