@@ -76,6 +76,16 @@ Save changes to .env file and deploy.
 <br>
 
 ## Screenshots
+
+[Screenshot1](./assets/images/pic1.png)
+<br>
+[Screenshot2](./assets/images/pic2.png)
+<br>
+[Screenshot3](./assets/images/pic3.png)
+<br>
+[Screenshot4](./assets/images/pic4.png)
+<br>
+[Screenshot5](./assets/images/pic5.png)
 <br>
 <br>
 <br>
@@ -87,7 +97,7 @@ Save changes to .env file and deploy.
 
 ## Demonstration
 
--[Presention Slides](https://docs.google.com/presentation/d/1LeYb_d5uvq3wRo3i1XdawShc71srlnlQwMdo5jXy7f0/edit#slide=id.p)
+- [Presention Slides](https://docs.google.com/presentation/d/1LeYb_d5uvq3wRo3i1XdawShc71srlnlQwMdo5jXy7f0/edit#slide=id.p)
 <br>
 <br>
 <br>
