@@ -1,0 +1,30 @@
+ <div class="container-fluid">
+    <header>
+        <h1 class="identifier">
+            <a href="/"> Blog</a>
+        </h1>
+        <nav>
+          {{#if loggedIn}}
+          <button id="logout" class="btn-link">logout</button> | 
+          {{else}}
+          <a href="/login">login</a> | 
+          {{/if}}
+          <a href="/homepage">home</a> |
+          <a href="/dashboard">dashboard</a>
+        </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+                    {{{ body }}}
+        </div>
+      </div>
+    </main>
+    <footer>
+      
+    </footer>
+  </div>
+
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}

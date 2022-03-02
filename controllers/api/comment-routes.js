@@ -3,7 +3,8 @@ const router = require('express').Router();
 const { Comment, Post } = require('../../models');
 
 // checks if user logged in; have session; authorized
-// const withAuth = require('../../utils/auth');
+const withAuth = require('../../utils/auth');
+
 
 router.get('/', (req, res) => {
     Comment.findAll()
@@ -14,7 +15,7 @@ router.get('/', (req, res) => {
     });
 });
 
-router.post('/', (req, res) => {
+router.post('/', withAuth, (req, res) => {
     // check the session
     if (req.session) {
       Comment.create({
