@@ -1,22 +1,14 @@
 
 # Blog Application
-<br>
-<br>
-
 ---
-<br>
-<br>
 <br>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-<br>
-<br>
+
 <br>
 
 ---
 <br>
-<br>
-
 ## Description:
 A mySQL blog application designed to allow users to read, browse, and post blog entries to application. The user may also comment on any posted entry. 
 The application uses the Model-view-controller structure, provides a secure password protected session. Passwords are hashsed upon creation for security.
@@ -27,9 +19,6 @@ The User may view posts without an login credentials, but to create, delete, edi
 
 ---
 <br>
-<br>
-<br>
-
 ## Usage and Installation
 
 A deployed version of the application can be found here:
@@ -48,11 +37,7 @@ Save changes to .env file and deploy.
 <br>
 
 ---
-
 <br>
-<br>
-<br>
-
 ## Built With:
 
 - Node.js
@@ -72,9 +57,6 @@ Save changes to .env file and deploy.
 
 ---
 <br>
-<br>
-<br>
-
 ## Screenshots
 
 [Screenshot1](./assets/images/pic1.png)
@@ -87,14 +69,9 @@ Save changes to .env file and deploy.
 <br>
 [Screenshot5](./assets/images/pic5.png)
 <br>
-<br>
-<br>
 
 ---
 <br>
-<br>
-<br>
-
 ## Demonstration
 
 - [Presention Slides](https://docs.google.com/presentation/d/1LeYb_d5uvq3wRo3i1XdawShc71srlnlQwMdo5jXy7f0/edit#slide=id.p)
@@ -104,9 +81,6 @@ Save changes to .env file and deploy.
 
 ---
 <br>
-<br>
-<br>
-
 ## Collaborators
 
  1. Tamara
@@ -131,9 +105,6 @@ Save changes to .env file and deploy.
 
 ---
 <br>
-<br>
-<br>
-
 ## Links
 
 Deployed Application:
@@ -149,9 +120,6 @@ Github Repository:
 
 ---
 <br>
-<br>
-<br>
-
 ## License
 
 MIT License
@@ -175,8 +143,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-<br>
-<br>
 <br>
 
 ---
