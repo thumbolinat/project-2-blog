@@ -90,21 +90,21 @@ Save changes to .env file and deploy.
 ## Collaborators
 
  1. Tamara
-    -- Project Lead
-    -- Starter Code
-    -- Javascript
+    - Project Lead
+    - Starter Code
+    - Javascript
 
  2. Jaimit
-    -- API
-    -- Routes
+    - API
+    - Routes
 
  3. Abirami
-    --Handlebars
-    --CSS
+    - Handlebars
+    - CSS
 
  4. Vithursan
-    --Database
-    --Models
+    - Database
+    - Models
 <br>
 <br>
 <br>
