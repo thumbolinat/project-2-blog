@@ -40,38 +40,46 @@ router.get('/', (req, res) => {
 // retrieve a post
 router.get('/:id', (req, res) => {
     Post.findOne({
-        where: {
-          id: req.params.id
-        },
-        attributes: ['id', 'post_text', 'title', 'created_at'],
-        include: [
-            {
-                model: Comment,
-                attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
-                // also include the User model itself so it can attach the username to the comment
-                include: {
-                    model: User,
-                    attributes: ['username']
-                }
-            },
-            {
-                model: User,
-                attributes: ['username']
-            }
-        ]
-      })
-        .then(dbPostData => {
-          if (!dbPostData) {
-            res.status(404).json({ message: 'No post found with this id' });
-            return;
+      where: {
+        id: req.params.id
+      },
+      attributes: ['id', 'post_text', 'title', 'created_at'],
+      include: [
+          {
+              model: Comment,
+              attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+              // also include the User model itself so it can attach the username to the comment
+              include: {
+                  model: User,
+                  attributes: ['username']
+              }
+          },
+          {
+              model: User,
+              attributes: ['username']
           }
-          res.json(dbPostData);
-        })
-        .catch(err => {
-          console.log(err);
-          res.status(500).json(err);
-        });
-});
+      ]
+    })
+    .then(dbPostData => {
+      if (!dbPostData) {
+        res.status(404).json({ message: 'No post found with this id' });
+        return;
+      }
+
+      // serialize the data
+      const post = dbPostData.get({ plain: true });
+
+      // pass data to template
+      res.render('single-post', {
+        post,
+        loggedIn: req.session.loggedIn
+      });
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+  });
 
 // create a post
 router.post('/', withAuth, (req, res) => {
@@ -90,6 +98,57 @@ router.post('/', withAuth, (req, res) => {
 });
 
 // update a post
+router.get('/edit/:id', withAuth, (req, res) => { // add withAuth here as our own middlware
+    Post.findOne({
+      where: {
+          id: req.params.id
+      },
+      attributes: [
+          'id', 
+          'post_text', 
+          'title', 
+          'created_at'
+        ],
+      include: [
+          {
+              model: Comment,
+              attributes: ['id', 'comment_text', 'user_id', 'created_at'],
+              // also include the User model itself so it can attach the username to the comment
+              include: {
+                  model: User,
+                  attributes: ['username']
+              }
+          },
+          {
+              model: User,
+              attributes: ['username']
+          }
+      ]
+    })
+      .then(dbPostData => {
+          if(!dbPostData) {
+              // The 404 status code identifies a user error and will need a different request for a successful response.
+              res.status(404).json({ message: 'No post with this id was found'});
+              return;
+          }
+  
+          // serialize the data with plain: true
+          const post = dbPostData.get({ plain: true });
+  
+          // pass data to template
+          res.render('edit-post', { 
+            post,
+            loggedIn: req.session.loggedIn
+            // user will only see comments if logged in
+          });
+      })  
+      .catch(err => {
+          console.log(err);
+          res.status(500).json(err);
+      });
+  
+  });
+
 router.put('/:id', (req, res) => {
     // used the request parameter to find the post, then used the req.body.title value to replace the title of the post
     Post.update(
