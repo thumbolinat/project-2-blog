@@ -1,12 +1,34 @@
 
 # Blog Application
+<br>
+<br>
+
+---
+<br>
+<br>
+<br>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<br>
+<br>
+<br>
+
+---
+<br>
+<br>
 
 ## Description:
 A mySQL blog application designed to allow users to read, browse, and post blog entries to application. The user may also comment on any posted entry. 
 The application uses the Model-view-controller structure, provides a secure password protected session. Passwords are hashsed upon creation for security.
-The User may view posts without an login credentials, but to create, delete, edit and comment, credentials are required. 
+The User may view posts without an login credentials, but to create, delete, edit and comment, credentials are required.
+<br>
+<br>
+<br>
+
+---
+<br>
+<br>
+<br>
 
 ## Usage and Installation
 
@@ -21,7 +43,15 @@ For local testing, download repo and please add .env file to root of app directo
  - DB_PW='XXX'
 
 Save changes to .env file and deploy.
+<br>
+<br>
+<br>
 
+---
+
+<br>
+<br>
+<br>
 
 ## Built With:
 
@@ -36,31 +66,63 @@ Save changes to .env file and deploy.
 - MySQL Database
 - Express Session Authentication
 - User Input Filter
+<br>
+<br>
+<br>
+
+---
+<br>
+<br>
+<br>
 
 ## Screenshots
+<br>
+<br>
+<br>
+
+---
+<br>
+<br>
+<br>
 
 ## Demonstration
 
 -[Presention Slides](https://docs.google.com/presentation/d/1LeYb_d5uvq3wRo3i1XdawShc71srlnlQwMdo5jXy7f0/edit#slide=id.p)
+<br>
+<br>
+<br>
+
+---
+<br>
+<br>
+<br>
 
 ## Collaborators
 
- - Tamara
- -- Project Lead
- -- Starter Code
- -- Javascript
+ 1. Tamara
+    -- Project Lead
+    -- Starter Code
+    -- Javascript
 
- - Jaimit
- -- API
- -- Routes
+ 2. Jaimit
+    -- API
+    -- Routes
 
- - Abirami
- --Handlebars
- --CSS
+ 3. Abirami
+    --Handlebars
+    --CSS
 
- - Vithursan
- --Database
- --Models
+ 4. Vithursan
+    --Database
+    --Models
+<br>
+<br>
+<br>
+
+---
+<br>
+<br>
+<br>
 
 ## Links
 
@@ -71,6 +133,14 @@ Deployed Application:
 Github Repository:
 
  - https://github.com/thumbolinat/project-2-blog
+<br>
+<br>
+<br>
+
+---
+<br>
+<br>
+<br>
 
 ## License
 
@@ -95,5 +165,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+<br>
+<br>
+<br>
 
+---
 
