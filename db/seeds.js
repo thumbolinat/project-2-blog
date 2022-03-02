@@ -1,7 +1,6 @@
 
 const sequelize = require('../config/connection');
-const { Post } = require('../models');
-const { User } = require('../models');
+const { Post, User, Comment } = require('../models');
 
 
 // create an array of rows that you want to seed the model with
