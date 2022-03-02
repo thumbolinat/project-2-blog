@@ -5,14 +5,16 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "node server",
     "watch": "nodemon server.js",
     "seed": "node seeds/seeds.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bad-words": "^3.0.4",
     "bcrypt": "^5.0.1",
+    "config": "^3.3.7",
     "connect-session-sequelize": "^7.1.2",
     "deprecated": "^0.0.2",
     "dotenv": "^16.0.0",
