@@ -41,54 +41,5 @@ router.get('/', withAuth, (req, res) => { // add withAuth here as our own middlw
         console.log(req.session.user_id);
   });
 
-router.get('/edit/:id', withAuth, (req, res) => { // add withAuth here as our own middlware
-  Post.findOne({
-    where: {
-        id: req.params.id
-    },
-    attributes: [
-        'id', 
-        'post_text', 
-        'title', 
-        'created_at'
-      ],
-    include: [
-        {
-            model: Comment,
-            attributes: ['id', 'comment_text', 'user_id', 'created_at'],
-            // also include the User model itself so it can attach the username to the comment
-            include: {
-                model: User,
-                attributes: ['username']
-            }
-        },
-        {
-            model: User,
-            attributes: ['username']
-        }
-    ]
-  })
-    .then(dbPostData => {
-        if(!dbPostData) {
-            // The 404 status code identifies a user error and will need a different request for a successful response.
-            res.status(404).json({ message: 'No post with this id was found'});
-            return;
-        }
 
-        // serialize the data with plain: true
-        const post = dbPostData.get({ plain: true });
-
-        // pass data to template
-        res.render('edit-post', { 
-          post,
-          loggedIn: req.session.loggedIn
-          // user will only see comments if logged in
-        });
-    })  
-    .catch(err => {
-        console.log(err);
-        res.status(500).json(err);
-    });
-
-});
 module.exports = router;
