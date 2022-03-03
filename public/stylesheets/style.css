@@ -11,16 +11,11 @@ html {
     font-size: 20px;
 }
 
-body {
-    margin: auto;
-}
-
 a, u {
    text-decoration: none !important;
 }
 
 h1, .identifier {
-    margin: auto;
     font-family: fantasy;
     font-size: 75px;
     text-shadow: 3px 3px 5px black;
