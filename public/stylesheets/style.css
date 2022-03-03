@@ -84,7 +84,7 @@ h1, .identifier {
 
 }
 
-.card, .text-area, .col{
+.card, .text-area, .bg-muted{
     box-shadow: 3px 3px 5px black;
 }
 
