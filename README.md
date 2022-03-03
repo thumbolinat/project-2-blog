@@ -80,7 +80,7 @@ Save changes to .env file and deploy.
 
 - [Presentation Slides](https://docs.google.com/presentation/d/e/2PACX-1vT38SZG6DmrhrVCoo8c7IJ6hrgR7NThYpV61gN5AF5-DIWZdUDikIM435U1m2E42MhfF9HFQgKluocJ/pub?start=true&loop=true&delayms=5000)
 
-- [Demo](./content/images/Demo.gif)
+- [Demo](https://www.youtube.com/watch?v=6JJD-rXouVI)
 
 <br>
 
