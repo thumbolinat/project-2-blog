@@ -84,8 +84,8 @@ h1, .identifier {
 
 }
 
-.card, .text-area, .bg-muted{
-    box-shadow: 3px 3px 5px black;
+.card, .text-area, .bg-muted, .bg-light {
+    box-shadow: 1px 1px 4px black;
 }
 
 .edit-link,
