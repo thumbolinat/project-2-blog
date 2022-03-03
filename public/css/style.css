@@ -34,6 +34,7 @@ h1, .identifier {
     color:rgb(15, 138, 253, 0.85);
     font-weight: bold;
     box-shadow: 3px 3px 7px black;
+    opacity: 0.87;
 }
 
 .btn-primary {
