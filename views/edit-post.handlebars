@@ -5,7 +5,7 @@
     </h2>
     <form class="edit-post-form">
         <div class="mb-3">
-            <input class="form-control" name="post-title" type="text" value="{{post.title}}" >
+            <input class="form-control" name="post-title" type="text" value="{{post.title}}">
         </div>
         <div class="mb-3">
             <textarea class="form-control" rows="3" name="post-text" id="post-text">{{post.post_text}}</textarea>
@@ -16,7 +16,7 @@
         <div class="pb-2">
             Posted by {{post.user.username}} on {{format_date post.created_at}}
             |
-            <a href="/api/posts/{{post.id}}">{{post.comments.length}} Comment(s)</a>
+            <a href="/post/{{post.id}}">{{post.comments.length}} Comment(s)</a>
         </div>
         <button type="submit" class="btn btn-primary">Save post</button>
         <button type="button" class="delete-post-btn btn btn-danger">Delete post</button>
@@ -39,4 +39,4 @@
 
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
-<script src="/javascript/comments.js"></script>
+<script src="/javascript/comment.js"></script>
