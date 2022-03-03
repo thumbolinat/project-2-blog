@@ -60,7 +60,6 @@ router.post('/', (req, res) => {
     // expects {username: 'Lernantino', password: 'password1234'}
   User.create({
     username: req.body.username,
-    email: req.body.email,
     password: req.body.password
   })
   .then(dbUserData => {
@@ -90,7 +89,11 @@ router.post('/login', (req, res) => {
       })
       .then(dbUserData => {
         if (!dbUserData) {
+<<<<<<< HEAD
           res.status(400).json({ message: 'Incorrect username or password!' });
+=======
+          res.status(400).json({ message: 'Incorrect user or password!' });
+>>>>>>> 315c49b5328cad749516fe599850f363d41e8ab8
           return;
         }
         // Verify user
