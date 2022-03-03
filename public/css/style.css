@@ -31,6 +31,7 @@ a, u {
 body {
     background-image: url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-033.jpg);
     background-size: cover;
+    background-position: fixed;
 }
 
 h1, .identifier {
@@ -104,7 +105,7 @@ h1, .identifier {
     color: white;
     font-size: 30px;
     text-shadow: 2px 2px 2px black;
-    transform: scale(-0.7, -0.7);
+    transform: scale(0.72, 0.72);
 
 }
 
