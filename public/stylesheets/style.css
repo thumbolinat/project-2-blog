@@ -15,7 +15,7 @@ a, u {
    text-decoration: none !important;
 }
 
-.h1 {
+.h1, .identifier {
     text-shadow: 2px 2px 5px black;
 
 }
