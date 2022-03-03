@@ -104,6 +104,7 @@ h1, .identifier {
     color: white;
     font-size: 30px;
     text-shadow: 2px 2px 2px black;
+    transform: scale(1, 1);
 
 }
 
