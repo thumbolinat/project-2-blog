@@ -20,7 +20,6 @@ a, u {
     font-size: 75px;
     text-shadow: 2px 2px 5px black;
     color: linear-gradient(45deg, rgba(147, 211, 248, 0.85), rgb(116, 204, 245, 0.9), rgb(186, 222, 252, 0.95));
-    background-image: linear-gradient(45deg, rgba(147, 211, 248, 0.85), rgb(116, 204, 245, 0.9), rgb(186, 222, 252, 0.95));
 
 }
 
@@ -28,13 +27,33 @@ a, u {
     text-shadow: 2px 2px 5px rgb(199, 241, 253);
 }
 
-.btn, .btn-primary, .btn-info {
+.btn-primary, .btn-info {
     box-shadow: 3px 3px 5px black;
     background-image: linear-gradient(45deg, rgb(15, 138, 253, 0.85), rgb(116, 204, 245, 0.9), rgb(186, 222, 252, 0.95));
     font-weight: bold;
     color: white;
     font-size: 30px;
     text-shadow: 2px 2px 2px black;
+}
+
+.btn-danger {
+    box-shadow: 3px 3px 5px black;
+    background-image: linear-gradient(45deg, rgba(247, 3, 3, 0.85), rgba(247, 129, 62, 0.9), rgba(247, 219, 169, 0.95));
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+.btn-submit {
+    box-shadow: 3px 3px 5px black;
+    background-image: linear-gradient(45deg, rgba(250, 110, 17, 0.85), rgba(230, 132, 75, 0.9), rgba(247, 219, 169, 0.95));
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black;
+
 }
 
 nav {
