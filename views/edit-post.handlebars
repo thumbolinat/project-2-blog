@@ -16,7 +16,7 @@
         <div class="pb-2">
             Posted by {{post.user.username}} on {{format_date post.created_at}}
             |
-            <a href="/post/{{post.id}}">{{post.comments.length}} Comment(s)</a>
+            <a href="/api/posts/{{post.id}}">{{post.comments.length}} Comment(s)</a>
         </div>
         <button type="submit" class="btn btn-primary">Save post</button>
         <button type="button" class="delete-post-btn btn btn-danger">Delete post</button>
