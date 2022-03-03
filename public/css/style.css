@@ -129,8 +129,14 @@ nav, .btn-link {
 
 }
 
-nav:hover, a:hover, .btn-link:hover, .go-to-dash:hover, .edit-link:hover {
+nav:hover, a:hover, ul:hover, .btn-link:hover, .go-to-dash:hover, .edit-link:hover {
     transform: scale3d(1.1, 1.1, 1.1);
-    color: rgb(245, 241, 37);
+    color: rgb(184, 181, 6);
+
+}
+
+.card-body:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    background-color: rgb(203, 247, 232);
 
 }
