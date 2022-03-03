@@ -20,6 +20,10 @@ a, u {
    text-decoration: none !important;
 }
 
+#logout, #logout:hover {
+    cursor: pointer;
+}
+
 
 
 h1, .identifier {
