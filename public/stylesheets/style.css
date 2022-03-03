@@ -8,6 +8,8 @@
 
 body {
     background-image: url(https://www.teahub.io/photos/full/34-340335_50-beautiful-and-minimalist-presentation-backgrounds-backgrounds-for.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 html {
