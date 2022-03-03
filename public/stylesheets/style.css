@@ -16,6 +16,7 @@ a, u {
 }
 
 .h1, .identifier {
+    font-family: fantasy;
     text-shadow: 2px 2px 5px black;
 
 }
