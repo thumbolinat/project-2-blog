@@ -85,12 +85,12 @@ router.post('/users/login', (req, res) => {
 
     User.findOne({
         where: {
-          username: req.body.email
+          username: req.body.username
         }
       })
       .then(dbUserData => {
         if (!dbUserData) {
-          res.status(400).json({ message: 'No user with that email exists!' });
+          res.status(400).json({ message: 'Incorrect username or password!' });
           return;
         }
         // Verify user
