@@ -22,6 +22,10 @@ a, u {
 
 }
 
-.h2 {
+.h2, .log {
     text-shadow: 2px 2px 5px blue;
+}
+
+.btn {
+    box-shadow: 3px 3px 5px black;
 }
