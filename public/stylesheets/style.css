@@ -15,7 +15,11 @@ a, u {
    text-decoration: none !important;
 }
 
-.btn {
-    color: brown;
+.h1 {
+    text-shadow: 2px 2px 5px black;
 
+}
+
+.h2 {
+    text-shadow: 2px 2px 5px blue;
 }
