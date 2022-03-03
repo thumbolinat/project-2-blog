@@ -4,10 +4,10 @@
         <div class="title">
             <h3>{{post.title}}</h3>
         </div>
-        <div class="muted-text">
+        <div class="muted-text allPost">
             <em>Posted by {{post.user.username}} on {{format_date post.created_at}}</em>
         </div>
-        <div class="body">
+        <div class="body allPost">
             {{post.post_text}}
         </div>
     </article>
@@ -15,12 +15,12 @@
     {{!-- add comment --}}
     {{#if loggedIn}}
         <form class="comment-form py-2">
-            <div class="pb-3">
+            <div class="pb-3 allPost">
                 <textarea class="form-control" rows="3" name="comment-body" id="post-text">{{post.post_text}}</textarea>
             </div>
 
             <div>
-                <button type="submit" class="btn btn-success">add comment</button>
+                <button type="submit" class="btn btn-success">Add Comment</button>
             </div>
         </form>
     {{/if}}
@@ -29,5 +29,5 @@
 
 </div>
 {{#if loggedIn}}
-    <script src="/javascript/comments.js"></script>
+    <script src="/javascript/comment.js"></script>
 {{/if}}
