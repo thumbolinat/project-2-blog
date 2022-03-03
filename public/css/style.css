@@ -116,6 +116,7 @@ h1, .identifier {
 
 .card, .form-control, .form-label {
     box-shadow: 3px 3px 7px black;
+    opacity: 0.86;
 }
 
 .edit-link,
@@ -129,14 +130,14 @@ nav, .btn-link {
 
 }
 
-ul:hover, .btn-link:hover, .edit-link:hover {
+.btn-link:hover, .edit-link:hover {
     transform: scale3d(1.1, 1.1, 1.1);
     color: rgb(184, 181, 6);
 
 }
 
 .card-body:hover, .card:hover {
-    transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.01, 1.01, 1.01);
     background-color: rgb(203, 247, 232);
 
 }
