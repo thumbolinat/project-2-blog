@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Comment, Post } = require('../../models');
+const { User, Comment, Post, Vote } = require('../../models');
 
 // GET /api/users
 router.get('/', (req, res) => {
@@ -81,7 +81,7 @@ router.post('/', (req, res) => {
 
 // verify user during login
 // POST method carries the request parameter in req.body, which makes it a more secure way of transferring data from the client to the server
-router.post('/users/login', (req, res) => {
+router.post('/login', (req, res) => {
 
     User.findOne({
         where: {
