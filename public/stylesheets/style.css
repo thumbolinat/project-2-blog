@@ -14,3 +14,8 @@ html {
 a, u {
    text-decoration: none !important;
 }
+
+.btn {
+    color: brown;
+
+}
