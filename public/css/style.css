@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -141,4 +142,27 @@ nav:hover, .edit-link:hover {
 
 .sorted:hover, a:hover, p:hover {
     color: rgb(184, 181, 6);
+=======
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap');
+
+/*Global reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px !important;
+}
+
+a, ul {
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+
+#logout, #logout:hover {
+    cursor: pointer;
+>>>>>>> 01557d8ebbe1c9144cb0eb381762436087be5bab
 }
