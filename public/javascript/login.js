@@ -42,7 +42,7 @@ async function signupFormHandler(event) {
         if (response.ok) {
             document.location.replace('/');
         } else {
-            alert('Incorrect username or Password');
+            alert('Incorrect user or Password');
         }
     }
   }
