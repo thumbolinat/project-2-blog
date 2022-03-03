@@ -23,7 +23,7 @@ h1, .identifier {
 
 }
 
-h2, .log {
+.log {
     text-shadow: 2px 2px 5px rgb(120, 150, 250);
     color: white;
     font-weight: bold;
@@ -84,9 +84,8 @@ h2, .log {
 
 }
 
-.card{
-    box-shadow: 2px 2px 5px black;
-    text-shadow: 2px 2px 2px black;
+.card, .text-area, .col{
+    box-shadow: 3px 3px 5px black;
 }
 
 .edit-link,
