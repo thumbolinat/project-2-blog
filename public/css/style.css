@@ -21,15 +21,6 @@ body {
     background-size: cover;
 }
 
-html {
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-}
-
-a, u {
-   text-decoration: none !important;
-}
-
 h1, .identifier {
     font-family: fantasy;
     font-size: 75px;
@@ -42,6 +33,7 @@ h1, .identifier {
     text-shadow: 3px 3px 5px rgb(120, 150, 250);
     color:rgb(15, 138, 253, 0.85);
     font-weight: bold;
+    box-shadow: 3px 3px 7px black;
 }
 
 .btn-primary {
