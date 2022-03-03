@@ -130,7 +130,7 @@ nav, .btn-link {
 
 }
 
-.btn-link:hover, .edit-link:hover {
+nav:hover, .edit-link:hover {
     transform: scale3d(1.1, 1.1, 1.1);
     color: rgb(184, 181, 6);
 
@@ -140,4 +140,8 @@ nav, .btn-link {
     transform: scale3d(1.01, 1.01, 1.01);
     background-color: rgb(203, 247, 232);
 
+}
+
+.go-to-dash:hover {
+    color: rgb(184, 181, 6);
 }
