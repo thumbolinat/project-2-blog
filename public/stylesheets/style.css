@@ -84,8 +84,8 @@ h1, .identifier {
 
 }
 
-.card, .text-area, .sign {
-    box-shadow: 3px 3px 8px black;
+.card, .text-area {
+    box-shadow: 3px 3px 7px black;
 }
 
 .edit-link,
@@ -95,6 +95,6 @@ h1, .identifier {
 nav, .btn-link {
     font-size: 20px;
     font-weight: bold;
-    text-shadow: 3px 3px 3px rgb(120, 150, 250);
+    text-shadow: 3px 3px 4px rgb(120, 150, 250);
 
 }
