@@ -74,7 +74,7 @@ h2, .log {
     font-size: 30px;
     text-shadow: 2px 2px 2px black;
     transform: scale(1.5, 1.5);
-    transform: translate(5px, 10px);
+    transform: translate(1px, 1px);
 
 }
 
