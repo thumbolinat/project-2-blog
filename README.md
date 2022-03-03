@@ -9,16 +9,16 @@
 
 ---
 <br>
+<br>
 
 ## Description:
 A mySQL blog application designed to allow users to read, browse, and post blog entries to application. The user may also comment on any posted entry. 
 The application uses the Model-view-controller structure, provides a secure password protected session. Passwords are hashsed upon creation for security.
 The User may view posts without an login credentials, but to create, delete, edit and comment, credentials are required.
 <br>
-<br>
-<br>
 
 ---
+<br>
 <br>
 
 ## Usage and Installation
@@ -35,10 +35,9 @@ For local testing, download repo and please add .env file to root of app directo
 
 Save changes to .env file and deploy.
 <br>
-<br>
-<br>
 
 ---
+<br>
 <br>
 
 ## Built With:
@@ -55,10 +54,9 @@ Save changes to .env file and deploy.
 - Express Session Authentication
 - User Input Filter
 <br>
-<br>
-<br>
 
 ---
+<br>
 <br>
 
 ## Screenshots
@@ -76,15 +74,16 @@ Save changes to .env file and deploy.
 
 ---
 <br>
+<br>
 
 ## Demonstration
 
-- [Presention Slides](https://docs.google.com/presentation/d/1LeYb_d5uvq3wRo3i1XdawShc71srlnlQwMdo5jXy7f0/edit#slide=id.p)
-<br>
-<br>
+- [Presentation Slides](https://docs.google.com/presentation/d/e/2PACX-1vT38SZG6DmrhrVCoo8c7IJ6hrgR7NThYpV61gN5AF5-DIWZdUDikIM435U1m2E42MhfF9HFQgKluocJ/pub?start=true&loop=true&delayms=5000)
+
 <br>
 
 ---
+<br>
 <br>
 
 ## Collaborators
@@ -106,10 +105,9 @@ Save changes to .env file and deploy.
     - Database
     - Models
 <br>
-<br>
-<br>
 
 ---
+<br>
 <br>
 
 ## Links
@@ -122,10 +120,9 @@ Github Repository:
 
  - https://github.com/thumbolinat/project-2-blog
 <br>
-<br>
-<br>
 
 ---
+<br>
 <br>
 
 ## License
