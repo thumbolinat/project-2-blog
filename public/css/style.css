@@ -31,7 +31,7 @@ a, u {
 body {
     background-image: url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-033.jpg);
     background-size: cover;
-    background-position: fixed;
+    background-attachment: fixed;
 }
 
 h1, .identifier {
