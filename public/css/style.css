@@ -16,10 +16,16 @@ a, u {
    text-decoration: none !important;
 }
 
-.allPost, .go-to-dash, .sorted, .card {
+.allPost, .go-to-dash, .sorted {
     text-shadow: 3px 3px 5px rgb(120, 150, 250);
     font-weight: bold;
     
+}
+
+.card {
+    text-shadow: 1px 1px 3px rgb(120, 150, 250);
+    font-weight: bold;
+
 }
 
 body {
