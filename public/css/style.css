@@ -128,3 +128,9 @@ nav, .btn-link {
     text-shadow: 3px 3px 4px rgb(188, 192, 216);
 
 }
+
+nav:hover, .btn-link:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    color: rgb(245, 241, 37);
+
+}
