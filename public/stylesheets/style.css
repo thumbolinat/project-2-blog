@@ -144,22 +144,15 @@ nav:hover, .edit-link:hover {
 }
 
 .animate__animated.animate__bounceIn {
-    --animate-duration: 1s;
+    --animate-duration: 0.5s;
     --animation-fill-mode: forwards;
-    --animation-delay: 1s;
+    --animation-delay: 0.5s;
 }
 
 .animate__animated.animate__hinge {
     animation-fill-mode: none;
-    animation-delay: 1.5s;
+    animation-delay: 1s;
 
 }
 
-.demo:hover .grows {
-    animation-name: grow;
-    animation-duration: 2s;
-    --animate-duration: 1s;
-    --animation-fill-mode: forwards;
-    
-  }
   
