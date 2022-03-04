@@ -150,7 +150,7 @@ nav:hover, .edit-link:hover {
 }
 
 .animate__animated.animate__hinge {
-    --animation-fill-mode: forwards;
-    --animation-delay: 1s;
+    --animation-fill-mode: none;
+    --animation-delay: 1.5s;
 
 }
