@@ -144,13 +144,13 @@ nav:hover, .edit-link:hover {
 }
 
 .animate__animated.animate__bounceIn {
-    --animate-duration: 1.5s;
+    --animate-duration: 1s;
     --animation-fill-mode: forwards;
     --animation-delay: 1s;
 }
 
 .animate__animated.animate__hinge {
-    --animation-fill-mode: none;
+    --animation-fill-mode: both;
     --animation-delay: 1.5s;
 
 }
