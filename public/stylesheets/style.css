@@ -144,5 +144,5 @@ nav:hover, .edit-link:hover {
 }
 
 .animate__animated.animate__bounceIn {
-    --animate-duration: 2s;
+    --animate-duration: 1.5s;
 }
