@@ -145,4 +145,12 @@ nav:hover, .edit-link:hover {
 
 .animate__animated.animate__bounceIn {
     --animate-duration: 1.5s;
+    --animation-fill-mode: forwards;
+    --animation-delay: 1s;
+}
+
+.animate__animated.animate__hinge {
+    --animation-fill-mode: forwards;
+    --animation-delay: 1s;
+
 }
