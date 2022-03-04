@@ -2,11 +2,11 @@
 
 <section id="create-blog" class="hide pt-3">
     <form class="submit-post-form">
-        <div class="mb-3">
+        <div class="mb-3 animate__animated animate__flipInX">
             <label for="post-title" class="form-label text-area"></label>
             <input type="text" class="form-control" id="post-title" name="post-title" placeholder="Title">
         </div>
-        <div class="text-area mb-3">
+        <div class="text-area mb-3 animate__animated animate__flipInX">
             <label for="post" class="form-label"></label>
             <textarea class="form-control" rows="3" type="text" id="post-body" name="post-body" placeholder="Post Text"></textarea>
         </div>
@@ -17,7 +17,7 @@
 {{#if posts.length}}
     <h2 class="m-3 allPost">My Posts</h2>
     {{#each posts as |post|}}
-        <div class="card p-2 m-2 rounded">
+        <div class="card p-2 m-2 rounded animate__animated animate__flipInX">
 
             <div class="card-body">
                 {{> post-data post }}
