@@ -22,7 +22,7 @@ a, u {
     
 }
 
-.card {
+.card,  .card-text, .comment-text, .comment {
     text-shadow: 1px 1px 3px rgb(120, 150, 250);
     font-weight: bold;
 
