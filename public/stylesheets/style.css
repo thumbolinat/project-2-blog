@@ -89,13 +89,23 @@ h1, .identifier {
 
 }
 
-.btn-info, .btn-dark {
+.btn-dark {
     box-shadow: 3px 3px 5px black;
     background-image: linear-gradient(45deg, rgb(15, 138, 253, 0.85), rgb(116, 204, 245, 0.9), rgb(186, 222, 252, 0.95));
     font-weight: bold;
     color: white;
     font-size: 30px;
     text-shadow: 2px 2px 2px black;
+}
+
+.btn-info {
+    box-shadow: 3px 3px 5px black;
+    background-image: linear-gradient(45deg, rgb(15, 138, 253, 0.85), rgb(116, 204, 245, 0.9), rgb(186, 222, 252, 0.95));
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+
 }
 
 .btn-success:hover, .btn-dark:hover, .btn-info:hover, .btn-submit:hover, .btn-primary:hover {
