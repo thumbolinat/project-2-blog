@@ -162,7 +162,9 @@ nav:hover, .edit-link:hover {
 }
 
 .btn:active {
-    transform: scale3d(0, 0, 0);
+    transform: scale3d(1, 1, 0.2);
+    background-image: linear-gradient(45deg, rgba(248, 142, 3, 0.85), rgba(245, 203, 65, 0.9), rgba(248, 243, 167, 0.95));
+
 }
 
   
