@@ -142,3 +142,7 @@ nav:hover, .edit-link:hover {
 .sorted:hover, a:hover, p:hover {
     color: rgb(184, 181, 6);
 }
+
+.animate__animated.animate__bounceIn {
+    --animate-duration: 2s;
+}
