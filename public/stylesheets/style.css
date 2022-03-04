@@ -100,12 +100,12 @@ h1, .identifier {
 
 .btn-success:hover, .btn-dark:hover, .btn-info:hover, .btn-submit:hover, .btn-primary:hover {
     background-image: linear-gradient(45deg, rgba(43, 245, 87, 0.85), rgba(152, 245, 65, 0.9), rgba(210, 245, 130, 0.95));
-    transform: scale3d(1, 1.1, 1.6);
+    transform: scale3d(1, 1, 1.5);
 }
 
 .btn-danger:hover {
     background-image: linear-gradient(45deg, rgba(248, 142, 3, 0.85), rgba(245, 203, 65, 0.9), rgba(248, 243, 167, 0.95));
-    transform: scale3d(1, 1.1, 1.6);
+    transform: scale3d(1, 1, 1.5);
 }
 
 
@@ -133,13 +133,13 @@ nav:hover, .edit-link:hover {
 
 }
 
-.card-body:hover {
+.card-body:hover, .card:hover {
     transform: scale3d(1, 1.1, 1.2);
     background-color: rgb(203, 247, 232);
 
 }
 
-.card-body:active {
+.card-body:active, .card-body:active {
     transform: scale3d(1, 0.9, 0.8);
     background-image: linear-gradient(45deg, rgb(238, 250, 11), rgba(231, 237, 115, 0.9), rgba(245, 241, 176, 0.95));
 
