@@ -155,4 +155,10 @@ nav:hover, .edit-link:hover {
 
 }
 
+.animate__animated.animate__flipInX {
+    --animate-duration: 1s;
+    --animation-fill-mode: forwards;
+    --animation-delay: 0.5s;
+}
+
   
