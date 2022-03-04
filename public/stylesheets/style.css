@@ -149,8 +149,8 @@ nav:hover, .edit-link:hover {
     --animation-delay: 1s;
 }
 
-.animate__animated.animate__hinge {
+/* .animate__animated.animate__hinge {
     --animation-fill-mode: both;
     --animation-delay: 1.5s;
 
-}
+} */
