@@ -53,6 +53,7 @@ Save changes to .env file and deploy.
 - MySQL Database
 - Express Session Authentication
 - User Input Filter
+- Animate.style
 <br>
 
 ---
