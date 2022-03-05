@@ -22,7 +22,7 @@ a, u {
     
 }
 
-.card {
+.card,  .card-text, .comment-text, .comment {
     text-shadow: 1px 1px 3px rgb(120, 150, 250);
     font-weight: bold;
 
@@ -89,7 +89,7 @@ h1, .identifier {
 
 }
 
-.btn-info, .btn-dark {
+.btn-dark {
     box-shadow: 3px 3px 5px black;
     background-image: linear-gradient(45deg, rgb(15, 138, 253, 0.85), rgb(116, 204, 245, 0.9), rgb(186, 222, 252, 0.95));
     font-weight: bold;
@@ -98,14 +98,24 @@ h1, .identifier {
     text-shadow: 2px 2px 2px black;
 }
 
+.btn-info {
+    box-shadow: 3px 3px 5px black;
+    background-image: linear-gradient(45deg, rgb(15, 138, 253, 0.85), rgb(116, 204, 245, 0.9), rgb(186, 222, 252, 0.95));
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+
+}
+
 .btn-success:hover, .btn-dark:hover, .btn-info:hover, .btn-submit:hover, .btn-primary:hover {
     background-image: linear-gradient(45deg, rgba(43, 245, 87, 0.85), rgba(152, 245, 65, 0.9), rgba(210, 245, 130, 0.95));
-    transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1, 1, 1.5);
 }
 
 .btn-danger:hover {
     background-image: linear-gradient(45deg, rgba(248, 142, 3, 0.85), rgba(245, 203, 65, 0.9), rgba(248, 243, 167, 0.95));
-    transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1, 1, 1.5);
 }
 
 
@@ -134,11 +144,43 @@ nav:hover, .edit-link:hover {
 }
 
 .card-body:hover, .card:hover {
-    transform: scale3d(1.01, 1.01, 1.01);
+    transform: scale3d(1, 1.1, 1.2);
     background-color: rgb(203, 247, 232);
+
+}
+
+.card-body:active, .card:active {
+    transform: scale3d(1, 0.9, 0.9);
+    background-image: linear-gradient(45deg, rgb(238, 250, 11), rgba(231, 237, 115, 0.9), rgba(245, 241, 176, 0.95));
 
 }
 
 .sorted:hover, a:hover, p:hover {
     color: rgb(184, 181, 6);
 }
+
+.animate__animated.animate__bounceIn {
+    --animate-duration: 1.5s;
+    --animation-fill-mode: forwards;
+    --animation-delay: 0.5s;
+}
+
+.animate__animated.animate__hinge {
+    animation-fill-mode: none;
+    animation-delay: 1s;
+
+}
+
+.animate__animated.animate__flipInX {
+    --animate-duration: 1.5s;
+    --animation-fill-mode: forwards;
+    --animation-delay: 0.5s;
+}
+
+.btn:active {
+    transform: scale3d(1, 0.9, 0.8);
+    background-image: linear-gradient(45deg, rgb(238, 250, 11), rgba(231, 237, 115, 0.9), rgba(245, 241, 176, 0.95));
+
+}
+
+  

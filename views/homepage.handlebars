@@ -1,5 +1,5 @@
 {{#if posts.length}}
-    <div class="d-flex justify-content-between">
+    <div class="d-flex justify-content-between animate__flipInX">
         <h2 class="allPost">All Posts</h2>
         <p class="sorted"><a href='/homepage/usersort'>sort by user</a> | <a href='/'>sort by date</a></p>
     </div>
@@ -7,7 +7,7 @@
 
     {{#each posts as |post|}}
 
-        <div class="card p-2 m-2 rounded">
+        <div class="card p-2 m-2 rounded animate__animated animate__flipInX">
             <div class="card-body">
                 {{> post-data post }}
 
