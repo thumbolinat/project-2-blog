@@ -9,16 +9,16 @@
 
 ---
 <br>
+<br>
 
 ## Description:
 A mySQL blog application designed to allow users to read, browse, and post blog entries to application. The user may also comment on any posted entry. 
 The application uses the Model-view-controller structure, provides a secure password protected session. Passwords are hashsed upon creation for security.
 The User may view posts without an login credentials, but to create, delete, edit and comment, credentials are required.
 <br>
-<br>
-<br>
 
 ---
+<br>
 <br>
 
 ## Usage and Installation
@@ -35,10 +35,9 @@ For local testing, download repo and please add .env file to root of app directo
 
 Save changes to .env file and deploy.
 <br>
-<br>
-<br>
 
 ---
+<br>
 <br>
 
 ## Built With:
@@ -54,37 +53,40 @@ Save changes to .env file and deploy.
 - MySQL Database
 - Express Session Authentication
 - User Input Filter
-<br>
-<br>
+- Animate.style
 <br>
 
 ---
+<br>
 <br>
 
 ## Screenshots
 
-[Screenshot1](./assets/images/pic1.png)
+[Screenshot1](./content/images/pic1.png)
 <br>
-[Screenshot2](./assets/images/pic2.png)
+[Screenshot2](./content/images/pic2.png)
 <br>
-[Screenshot3](./assets/images/pic3.png)
+[Screenshot3](./content/images/pic3.png)
 <br>
-[Screenshot4](./assets/images/pic4.png)
+[Screenshot4](./content/images/pic4.png)
 <br>
-[Screenshot5](./assets/images/pic5.png)
+[Screenshot5](./content/images/pic5.png)
 <br>
 
 ---
+<br>
 <br>
 
 ## Demonstration
 
-- [Presention Slides](https://docs.google.com/presentation/d/1LeYb_d5uvq3wRo3i1XdawShc71srlnlQwMdo5jXy7f0/edit#slide=id.p)
-<br>
-<br>
+- [Presentation Slides](https://docs.google.com/presentation/d/e/2PACX-1vT38SZG6DmrhrVCoo8c7IJ6hrgR7NThYpV61gN5AF5-DIWZdUDikIM435U1m2E42MhfF9HFQgKluocJ/pub?start=true&loop=true&delayms=5000)
+
+- [Demo](https://youtu.be/FJDMogc28NQ)
+
 <br>
 
 ---
+<br>
 <br>
 
 ## Collaborators
@@ -106,10 +108,9 @@ Save changes to .env file and deploy.
     - Database
     - Models
 <br>
-<br>
-<br>
 
 ---
+<br>
 <br>
 
 ## Links
@@ -122,10 +123,9 @@ Github Repository:
 
  - https://github.com/thumbolinat/project-2-blog
 <br>
-<br>
-<br>
 
 ---
+<br>
 <br>
 
 ## License

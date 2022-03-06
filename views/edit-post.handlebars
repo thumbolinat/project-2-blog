@@ -1,11 +1,11 @@
 <article>
-    <a href="/dashboard"> &larr; Back to dashboard</a>
-    <h2>
+    <a href="/dashboard" class="go-to-dash"> &larr; Back to dashboard</a>
+    <h2 class="allPost">
         Edit Post
     </h2>
-    <form class="edit-post-form">
+    <form class="edit-post-form animate__animated animate__flipInX">
         <div class="mb-3">
-            <input class="form-control" name="post-title" type="text" value="{{post.title}}" >
+            <input class="form-control" name="post-title" type="text" value="{{post.title}}">
         </div>
         <div class="mb-3">
             <textarea class="form-control" rows="3" name="post-text" id="post-text">{{post.post_text}}</textarea>
@@ -16,21 +16,21 @@
         <div class="pb-2">
             Posted by {{post.user.username}} on {{format_date post.created_at}}
             |
-            <a href="api/post/{{post.id}}">{{post.comments.length}} Comment(s)</a>
+            <a href="/api/posts/{{post.id}}">{{post.comments.length}} Comment(s)</a>
         </div>
-        <button type="submit" class="btn btn-primary">Save post</button>
-        <button type="button" class="delete-post-btn btn btn-danger">Delete post</button>
+        <button type="submit" class="btn btn-primary">Save Post</button>
+        <button type="button" class="delete-post-btn btn btn-danger">Delete Post</button>
     </form>
 </article>
 
 
-<form class="comment-form pt-4">
+<form class="comment-form pt-4 animate__animated animate__flipInX">
     <div>
         <textarea class="form-control" rows="3" name="comment-body" id="post-text"></textarea>
     </div>
 
     <div class="py-2">
-        <button type="submit" class="btn btn-success">add comment</button>
+        <button type="submit" class="btn btn-success">Add Comment</button>
     </div>
 </form>
 
